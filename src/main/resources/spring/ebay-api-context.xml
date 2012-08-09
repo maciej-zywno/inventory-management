@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<!-- PUBLIC -->
+
+	<bean id="apiContext" class="com.ebay.sdk.ApiContext">
+		<property name="apiLogging" ref="apiLogging" />
+		<property name="apiCredential" ref="apiCredential" />
+		<property name="apiServerUrl" value="${apiServerUrl}" />
+		<property name="site" value="GERMANY" />
+		<!-- country -->
+		<property name="errorLanguage" value="${errorLanguage}" />
+	</bean>
+
+	<!-- PRIVATE -->
+
+	<bean id="apiAccount" class="com.ebay.sdk.ApiAccount">
+		<property name="developer" value="${ebayDeveloperId}" />
+		<property name="application" value="${ebayApplicationId}" />
+		<property name="certificate" value="${ebayCertificateId}" />
+	</bean>
+
+	<bean id="apiLogging" class="com.ebay.sdk.ApiLogging">
+		<property name="logSOAPMessages" value="${logSOAPMessages}" />
+		<property name="logHTTPHeaders" value="${logHTTPHeaders}" />
+	</bean>
+
+	<bean id="apiCredential" class="com.ebay.sdk.ApiCredential">
+		<!--property name="eBayToken" value="${userToken}" /-->
+		<property name="apiAccount" ref="apiAccount" />
+	</bean>
+
+	<bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<!-- 
+				<value>classpath:ebay-sandbox.properties</value>
+				-->
+				<value>classpath:ebay-production.properties</value>
+				<value>classpath:config.properties</value>
+			</list>
+		</property>
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+	</bean>
+
+
+</beans>

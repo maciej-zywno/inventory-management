@@ -1,0 +1,259 @@
+#footer {
+	margin-bottom: 10px;
+}
+
+ul.menubar,ul.linkbar {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul.contact-menubar {
+	list-style-type: none;
+}
+
+ul
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-menubar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+li
+,
+{
+list-style-type
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
+}
+#gnav ul,#header #search {
+	margin-top: 25px;
+	margin-right: 0px;
+	float: right;
+}
+
+ul.menubar li,ul.linkbar li {
+	display: block;
+	float: left;
+}
+
+#gcontact {
+	margin: 0 0px 0 0;
+	padding: 0;
+	float: right;
+	margin-right: 0px;
+	width: 180px;
+}
+
+.contact-item {
+	padding: 4px; 1
+	text-transform: uppercase;
+	color: black;
+}
+
+#gnav ul li {
+	margin: 0 10px 0 0;
+	padding: 0;
+}
+
+#gnav a {
+	font-size: 1em;
+	padding: 5px 1em;
+	text-transform: uppercase;
+	color: white;
+	text-shadow1: #0A0A0A 0 1px 0;
+	text-decoration: none;
+}
+
+#gnav {
+	padding-top: 0px;
+	float: left;
+	margin-left: 80px;
+	width: 510px;
+}
+
+.logo {
+	float: left;
+	margin-right: 0px;
+	margin-top: 8px;
+	font-size: 40px;
+	width: 130px;
+}
+
+.container {
+	width: 900px;
+	height: 370px;
+	margin: 30px auto;
+}
+
+.clear,.container {
+	display: block;
+}
+
+#header-wrapper {
+	height: 65px;
+	background: #730209 0 0 repeat-x;
+}
+
+#page-wrapper {
+	min-height: 100%;
+	position: relative;
+	margin: -8px -8px 0 -8px;
+}
+
+body {
+	background: white;
+	font-size: 75%;
+	color: #0A0A0A;
+	font-family: "Georgia", "Lucida Grande", "Lucida Sans Unicode",
+		"Lucida Sans", Verdana, Tahoma, sans-serif;
+}
+
+a,a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+#slogan-1 {
+	position: relative;
+	width: 400px;
+	border: 0px solid black;
+	margin: 0px 0px 0px 0px;
+}
+
+#slogan-2 {
+	position: relative;
+	width: 400px;
+	border: 0px solid black;
+	margin: 20px 0px 0px 0px;
+}
+
+.slogan-text-1 {
+	color: #730209;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 3px;
+}
+
+.slogan-text-2 {
+	color: black;
+	font-weight: normal;
+	font-size: 13px;
+	padding: 3px;
+}
+
+#left {
+	float: left;
+	margin: 0px 0px 0px 0px;
+}
+
+#right {
+	float: left;
+	margin: 0px 0px 0px 30px;
+}
+
+#uploadFileForm {
+	margin: 0px 0px 0px 100px;
+}
+
+#o-nas {
+	width: 650px;
+}
+
+#dla-ksiegowych {
+	width: 650px;
+}
+
+#dla-programistow {
+	width: 650px;
+}
+
+#jak-to-dziala {
+	width: 650px;
+}
+
+.slogan-text-2 a {
+	color: grey;
+	text-decoration: none;
+}
+
+.slogan-text-2 a:hover {
+	color: grey;
+	text-decoration: underline;
+}

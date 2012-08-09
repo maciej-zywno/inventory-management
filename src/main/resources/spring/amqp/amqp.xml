@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rabbit="http://www.springframework.org/schema/rabbit" xsi:schemaLocation="http://www.springframework.org/schema/rabbit
+http://www.springframework.org/schema/rabbit/spring-rabbit-1.0.xsd
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<rabbit:listener-container connection-factory="connectionFactory">
+		<rabbit:listener queues="${appAuthorizedRoutingKey}" ref="mainService" method="handleAppAuthorizedMessage" />
+		<rabbit:listener queues="${appAuthorizedExceptionRoutingKey}" ref="mainService" method="handleAppAuthorizedMessageError" />
+	</rabbit:listener-container>
+	<rabbit:connection-factory id="connectionFactory" />
+	<rabbit:template id="amqpTemplate" connection-factory="connectionFactory" />
+	<rabbit:admin connection-factory="connectionFactory" />
+	<rabbit:queue name="${appAuthorizedRoutingKey}" durable="true" />
+	<rabbit:queue name="${appAuthorizedExceptionRoutingKey}" durable="true" />
+
+</beans>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jsp:root xmlns="http://www.w3.org/1999/html" 
+			xmlns:jsp="http://java.sun.com/JSP/Page" 
+			xmlns:c="http://java.sun.com/jsp/jstl/core" 
+			version="2.0">
+	<jsp:directive.attribute name="content" fragment="true"/>
+	<![CDATA[<!DOCTYPE html>]]>
+    <html>
+		<head>
+			<title>Manage your ebay listings with Google Docs</title>
+			<META http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+			<link href="resources/css/main.css" rel="stylesheet" type="text/css" />
+		</head>
+		<body>
+			<div id="page-wrapper">
+				<div id="header-wrapper">
+					<div id="header" class="container">
+						<div class="logo">
+							<a href="/">Ebay@GoogleDocs</a>
+						</div>
+						<div id="gnav">
+							<ul class="menubar gnav clear">
+								<li class="" id="gnav-company">
+									<a href="/features">Features</a>
+								</li>
+								<li class="" id="gnav-support">
+									<a href="/roadmap">Roadmap</a>
+								</li>
+								<li class="" id="gnav-support">
+									<a href="/policy">Policy</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<jsp:invoke fragment="content" />
+				<div id="footer-wrapper">
+					<div id="footer" class="container">
+						<div id="gcontact">
+							<ul class="contact-menubar gcontact clear">
+								<li class="contact-item" id="gnav-products">contact@ebaygdocs.com</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</body>
+	</html>
+</jsp:root>
